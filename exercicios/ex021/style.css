@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+h1{
+    background-color:rgb(196, 192, 188);
+    height: 300px;
+    width: 300px;
+    
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(53, 28, 110);
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+    margin: 20px 20px 40px 20px;
+
+    outline-width: 10px;
+    outline-style: dotted;
+    outline-color: green;
+}
+
+a{
+    border-width: 10px;
+    border-style: solid;
+    border-color: brown;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div > p{
+    display: none;
+}
+div:hover {
+    color: red;
+}
+div:hover > p{
+    display: block;
+    color: aliceblue;
+    background-color: blue;
+    width: 200px;
+    
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: left;
+}
+
+.texto1{
+    text-align: justify;
+}
+.texto2{
+    text-align: justify;
+}
