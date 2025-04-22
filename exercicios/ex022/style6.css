@@ -1,19 +1,31 @@
 @charset "UTF-8";
 body{
+    height: 98vh;
     background-color: black;
     background-image: url(imagens/wallpaper002.jpg);
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
-    height: 98vh;
     background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+
+    /*Shorthand - backgroud
+        color > image > position > repeat > size (o size tem que fazer separado) > attachment
+    */
+
 }
+
 
 main{
     background-color: white;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
     border-radius: 15px;
     border: 1px solid darkblue;
 
+}
+
+main > p{
+    text-align: justify;
 }
