@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(https://tecoapple.com/wp-content/uploads/2025/04/lanadelreybluebirdas025.jpg);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px dashed rgb(177, 17, 57);
+    height: 98vh;
+}
