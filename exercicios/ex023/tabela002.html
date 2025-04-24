@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+</head>
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(187, 233, 23, 0.712);
+    border: 1px solid black;
+}
+
+table{
+        width: 400px;
+        border-collapse: collapse;
+        position: relative;
+
+}
+
+tbody td, tbody th{
+    border: 1px solid black;
+    height: 25px;
+}
+
+
+
+
+td.numero{
+    text-align: right;
+}
+
+thead th, tfoot th, tfoot td{
+    background-color: rgba(0, 0, 139, 0.973);
+    color: white;
+    height: 25px;
+}
+
+thead > tr > th{
+    position: sticky;
+    top: 0;
+    background: -1px;
+    background-color: rgba(0, 0, 139, 0.973);;
+}
+
+
+tbody > tr:nth-child(odd){
+    background-color: rgba(252, 55, 147, 0.719);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+tbody > tr:nth-child(even){
+    background-color: rgba(134, 247, 90, 0.774);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+thead > tr{
+    border: 1px solid black;
+}
+
+
+
+</style>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Área dos estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px;">Área (km) </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">164 122,2</td>
+              </tr>
+              <tr>
+                <td>Alagoas</td>
+                <td class="numero">27 767,7</td>
+              </tr>
+              <tr>
+                <td>Amapá</td>
+                <td class="numero">142 814,6</td>
+              </tr>
+              <tr>
+                <td>Amazonas</td>
+                <td class="numero">1.570.745,7</td>
+              </tr>
+              <tr>
+                <td>Bahia</td>
+                <td class="numero">564.692,7</td>
+              </tr>
+              <tr>
+                <td>Ceará</td>
+                <td class="numero">148.825,6</td>
+              </tr>
+              <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">5.822,1</td>
+              </tr>
+              <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">46.077,5</td>
+              </tr>
+              <tr>
+                <td>Goiás</td>
+                <td class="numero">340.086,7</td>
+              </tr>
+              <tr>
+                <td>Maranhão</td>
+                <td class="numero">331.983,3</td>
+              </tr>
+              <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">903.357,9</td>
+              </tr>
+              <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">357.125,0</td>
+              </tr>
+              <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">586.528,3</td>
+              </tr>
+              <tr>
+                <td>Pará</td>
+                <td class="numero">1.247.689,5</td>
+              </tr>
+              <tr>
+                <td>Paraíba</td>
+                <td class="numero">56.439,8</td>
+              </tr>
+              <tr>
+                <td>Paraná</td>
+                <td class="numero">199.314,9</td>
+              </tr>
+              <tr>
+                <td>Pernambuco</td>
+                <td class="numero">98.311,6</td>
+              </tr>
+              <tr>
+                <td>Piauí</td>
+                <td class="numero">251.529,2</td>
+              </tr>
+              <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">43.696,1</td>
+              </tr>
+              <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">52.796,8</td>
+              </tr>
+              <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">281.748,5</td>
+              </tr>
+              <tr>
+                <td>Rondônia</td>
+                <td class="numero">237.576,2</td>
+              </tr>
+              <tr>
+                <td>Roraima</td>
+                <td class="numero">224.299,0</td>
+              </tr>
+              <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">95.346,2</td>
+              </tr>
+              <tr>
+                <td>São Paulo</td>
+                <td class="numero">248.209,4</td>
+              </tr>
+              <tr>
+                <td>Sergipe</td>
+                <td class="numero">21.910,3</td>
+              </tr>
+              <tr>
+                <td>Tocantins</td>
+                <td class="numero">277.620,9</td>
+              </tr>
+
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Área total</th>
+            <td class="numero"><strong>8.526.437,7 km²</strong></td>
+    
+        </tfoot>
+    </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut enim ipsum doloremque vel corporis. Mollitia labore dolor cumque asperiores doloremque, totam, exercitationem alias ullam, laborum aperiam facere sunt. Impedit, maiores!</p>
+    
+</body>
+</html>
