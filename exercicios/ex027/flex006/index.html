@@ -3,39 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Centralizado</title>
+    <title>Document</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        body{
+        div.conteiner{
             background-color: aquamarine;
-        }
-
-        main{
-            background-color: brown;
-            height: 90vh;
-            width: 90vw;
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+
         }
 
-        section{
-            background-color: rgb(179, 122, 36);
-            height: 200px;
-            width: 200px;
+        div.item{
+            background-color: blueviolet;
+            flex: auto;
         }
+
     </style>
 </head>
 <body>
-    <main>
-        <section>
-            <h1>Tela de Login</h1>
-        </section>
-    </main>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
 </body>
 </html>
