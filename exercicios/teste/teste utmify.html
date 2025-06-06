@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utmify Teste</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="redirecionarComUTM()">
+            Ir para outra página com UTM
+        </button>
+    </div>
+
+    <script>
+        function redirecionarComUTM() {
+            const params = window.location.search;
+            window.location.href = 'https://app.utmify.com.br/' + params;
+        }
+    </script>
+</body>
+</html>
