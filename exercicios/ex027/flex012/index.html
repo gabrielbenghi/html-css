@@ -6,28 +6,42 @@
     <title>Document</title>
     <style>
         div.conteiner{
-            background-color: rgb(45, 189, 16);
+            background-color: aquamarine;
             display: flex;
             flex-flow: row nowrap;
+
+
         }
 
         div.item{
-            background-color: rgb(61, 19, 211);
+            background-color: rgb(199, 70, 238);
             border: 1px solid black;
             text-align: center;
-            flex-basis: 150px;
+            flex-basis: 200px;
             flex-grow: 0;
-            flex-shrink: 1;
+            flex-shrink: 0;
           
+        }
+
+        div#cxA{
+        flex: 0 1 200px;
+        }
+
+        div#cxB{
+        flex: 2 1 150px;
+        }
+
+        div#cxC{
+        flex: 4 1 150px;        
         }
 
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item"></div>
-        <div class="item">C</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
 
     </div>
 </body>
